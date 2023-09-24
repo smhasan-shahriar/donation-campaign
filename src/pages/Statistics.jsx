@@ -7,7 +7,6 @@ import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
 const Statistics = () => {
     const [total] = useContext(TotalContext);
     const totalDonations = [...total];
-    console.log(totalDonations)
     const data = [
         { name: 'Group A', value: 12-totalDonations.length },
         { name: 'Group B', value: totalDonations.length },

@@ -5,6 +5,7 @@ import MainLayout from '../mainLayout/MainLayout';
 import Home from '../pages/Home';
 import Donation from '../pages/Donation';
 import Statistics from '../pages/Statistics';
+import DonationItemDetails from '../pages/DonationItemDetails';
 
 const NavigationRoutes = createBrowserRouter([
     {
@@ -15,7 +16,7 @@ const NavigationRoutes = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
-                loader: ()=> fetch('donation.json')
+                loader: ()=> fetch('/donation.json')
             },
             {
                 path: "/donation",
@@ -24,6 +25,11 @@ const NavigationRoutes = createBrowserRouter([
             {
                 path: "/statistics",
                 element: <Statistics></Statistics>
+            },
+            {
+                path: "/donations/:id",
+                element: <DonationItemDetails></DonationItemDetails>,
+                loader: ()=> fetch('/donation.json')
             }
         ]
     }

@@ -1,12 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import SelectedDonationCard from '../components/SelectedDonationCard';
+import { TotalContext } from '../mainLayout/MainLayout';
 
 const Donation = () => {
     const [donations, setDonations] = useState([]);
     const [displayAll, setDisplayAll] = useState(false);
+    const [total, setTotal] = useContext(TotalContext);
+    
     useEffect(()=> {
-        const newDonations = JSON.parse(localStorage.getItem('donation-saved'));
-        if (!newDonations){
+        // const newDonations = JSON.parse(localStorage.getItem('donation-saved'));
+        const newDonations = [...total]
+        if (newDonations === 0){
             setDonations([])
         }
         else{
@@ -14,7 +18,6 @@ const Donation = () => {
         }
         
     }, [])
-
 
     return (
         <div className="max-w-[1320px] mx-auto">

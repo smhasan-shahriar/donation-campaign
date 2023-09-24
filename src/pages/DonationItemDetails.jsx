@@ -1,27 +1,57 @@
 import { ToastContainer, toast } from 'react-toastify';
 import { useLoaderData, useParams } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
+import { useContext } from 'react';
+import { TotalContext } from '../mainLayout/MainLayout';
 
 const DonationItemDetails = () => {
+    const [total, setTotal] = useContext(TotalContext);
+  
     const donations = useLoaderData();
     const {id} = useParams();
     const donationItem = donations.find(donation => donation.id === id)
-    console.log(donationItem)
     const {picture, title, text_color, price, description} = donationItem;
     const handleSelect = () =>{
-     
-        const selectedItems = JSON.parse(localStorage.getItem('donation-saved'));
-        if(!selectedItems){
+        const selectedItems = [...total];
+        if (selectedItems.length === 0){
             const newItems = [];
             newItems.push(donationItem);
-            localStorage.setItem('donation-saved', JSON.stringify(newItems));
+            setTotal(newItems)
         }
         else{
+          const exists = selectedItems.find(item => item.id === id);
+            if(exists){
+                toast('You have already made the donation');
+                return; 
+            }
+            else{
             const newItems = [...selectedItems, donationItem];
-            localStorage.setItem('donation-saved', JSON.stringify(newItems));
+            setTotal(newItems)
+            }
         }
+
+        // const selectedItems = JSON.parse(localStorage.getItem('donation-saved'));
+        // if(!selectedItems){
+        //     const newItems = [];
+        //     newItems.push(donationItem);
+        //     localStorage.setItem('donation-saved', JSON.stringify(newItems));
+        //     setTotal(newItems)
+        // }
+        // else{
+        //     const exists = selectedItems.find(item => item.id === id);
+        //     if(exists){
+        //         toast('You have already made the donation')
+        //     }
+        //     else{
+        //     const newItems = [...selectedItems, donationItem];
+        //     localStorage.setItem('donation-saved', JSON.stringify(newItems));
+        //     setTotal(newItems)
+        //     }
+         
+        // }
         toast('You have successfully made the donation');
     }
+    console.log(total)
     return (
         <div className='max-w-[1320px] mx-auto'>
             <img src={picture} alt="" />

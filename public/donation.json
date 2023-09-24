@@ -81,12 +81,12 @@
       {
         "id": "8",
         "picture": "https://i.ibb.co/wCy0YW0/health-community.jpg",
-        "title": "Heal Together: Community Health Initiative",
+        "title": "Community Health Initiative",
         "category": "Health",
         "category_bg": "#0052FF33",
         "card_bg": "#0052FF26",
         "text_color": "#0052FF",
-        "description": "Heal Together: Community Health Initiative is a collaborative effort to build healthier and more resilient communities. Our mission is to address healthcare disparities, promote wellness, and foster unity. Through community outreach, health education, and accessible healthcare services, we empower individuals and families to lead healthier lives. Together, we're healing not just bodies but also the bonds that strengthen our communities.",
+        "description": "Community Health Initiative is a collaborative effort to build healthier and more resilient communities. Our mission is to address healthcare disparities, promote wellness, and foster unity. Through community outreach, health education, and accessible healthcare services, we empower individuals and families to lead healthier lives. Together, we're healing not just bodies but also the bonds that strengthen our communities.",
         "price": "550.00"
       },
       {
@@ -103,7 +103,7 @@
       {
         "id": "10",
         "picture": "https://i.ibb.co/cCq04jW/education-books.jpg",
-        "title": "Education for All: Bridging the Learning Gap",
+        "title": "Education for All",
         "category": "Education",
         "category_bg": "#FF444A33",
         "card_bg": "#FF444A26",

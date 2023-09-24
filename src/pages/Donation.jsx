@@ -5,7 +5,7 @@ import { TotalContext } from '../mainLayout/MainLayout';
 const Donation = () => {
     const [donations, setDonations] = useState([]);
     const [displayAll, setDisplayAll] = useState(false);
-    const [total, setTotal] = useContext(TotalContext);
+    const [total] = useContext(TotalContext);
     
     useEffect(()=> {
         // const newDonations = JSON.parse(localStorage.getItem('donation-saved'));

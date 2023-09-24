@@ -1,0 +1,137 @@
+{
+    "items": [
+      {
+        "id": "1",
+        "picture": "https://i.ibb.co/7yw5T2q/cloth-second.jpg",
+        "title": "Used Clothing Drive",
+        "category": "Clothing",
+        "category_bg": "#79C23F33",
+        "card_bg": "#79C23F26",
+        "text_button_bg": "#79C23F",
+        "description": "Give Your Clothes a Second Chance is a sustainable fashion movement with a purpose. Instead of discarding your gently used clothing, let them find new life and purpose. By donating your pre-loved garments, you're reducing waste, supporting sustainability, and making fashion a force for good. Join us in giving clothes a second chance to shine while helping those in need and caring for our planet.",
+        "price": "$300.00"
+      },
+      {
+        "id": "6",
+        "picture": "https://i.ibb.co/gjMvK8P/cloth-community.jpg",
+        "title": "Clothe Our Community",
+        "category": "Clothing",
+        "category_bg": "#79C23F33",
+        "card_bg": "#79C23F26",
+        "text_button_bg": "#79C23F",
+        "description": "Clothe Our Community is a heartfelt initiative aimed at providing essential clothing to those who need it most. With your support, we strive to ensure that no one in our community goes without warm, clean attire. Your generous donations empower individuals and families, offering them not just clothing but dignity and confidence. Join us in making a positive impact and clothing our community with love and compassion.",
+        "price": "$390.00"
+      },
+      {
+        "id": "9",
+        "picture": "https://i.ibb.co/5Tw7D1H/cloth-kindness.jpg",
+        "title": "Threads of Kindness",
+        "category": "Clothing",
+        "category_bg": "#79C23F33",
+        "card_bg": "#79C23F26",
+        "text_button_bg": "#79C23F",
+        "description": "Threads of Kindness is all about weaving compassion into the fabric of our community. Through your generous clothing donations, we're stitching together a network of support for individuals facing hardships. Each piece of clothing represents an act of kindness, providing warmth, comfort, and hope. Together, we're threading a tapestry of goodwill, one garment at a time.",
+        "price": "$450.00"
+      },
+      {
+        "id": "2",
+        "picture": "https://i.ibb.co/kDBd7hr/health-safe-water.jpg",
+        "title": "Clean Water for Children",
+        "category": "Health",
+        "category_bg": "#0052FF33",
+        "card_bg": "#0052FF26",
+        "text_button_bg": "#0052FF",
+        "description": "Threads of Kindness is all about weaving compassion into the fabric of our community. Through your generous clothing donations, we're stitching together a network of support for individuals facing hardships. Each piece of clothing represents an act of kindness, providing warmth, comfort, and hope. Together, we're threading a tapestry of goodwill, one garment at a time.",
+        "price": "$250.00"
+      },
+      {
+        "id": "5",
+        "picture": "https://i.ibb.co/wCy0YW0/health-community.jpg",
+        "title": "Heal Together: Community Health Initiative",
+        "category": "Health",
+        "category_bg": "#0052FF33",
+        "card_bg": "#0052FF26",
+        "text_button_bg": "#0052FF",
+        "description": "Heal Together: Community Health Initiative is a collaborative effort to build healthier and more resilient communities. Our mission is to address healthcare disparities, promote wellness, and foster unity. Through community outreach, health education, and accessible healthcare services, we empower individuals and families to lead healthier lives. Together, we're healing not just bodies but also the bonds that strengthen our communities.",
+        "price": "$550.00"
+      },
+      {
+        "id": "12",
+        "picture": "https://i.ibb.co/BZxWb7Z/health-medicare-all.jpg",
+        "title": "MediCare for All",
+        "category": "Health",
+        "category_bg": "#0052FF33",
+        "card_bg": "#0052FF26",
+        "text_button_bg": "#0052FF",
+        "description": "MediCare for All is a movement advocating for equitable access to quality healthcare. We believe that healthcare is a human right, not a privilege. Our mission is to ensure that everyone, regardless of their circumstances, has access to essential medical services. By supporting healthcare reform, we're striving for a healthier, more inclusive society where no one has to choose between their health and financial well-being. Join us in the fight for MediCare for All.",
+        "price": "$650.00"
+      },
+      {
+        "id": "3",
+        "picture": "https://i.ibb.co/tshF38M/food-good.jpg",
+        "title": "Better Food for Everyone",
+        "category": "Food",
+        "category_bg": "#F8714733",
+        "card_bg": "#F8714726",
+        "text_button_bg": "#F87147",
+        "description": "Better Food for Everyone is a campaign committed to improving food accessibility, quality, and nutrition for all. We believe that everyone deserves access to healthy, nourishing meals. Through initiatives that support local agriculture, reduce food waste, and provide nutrition education, we aim to create a world where hunger is rare, and nutritious food is abundant. Join us in the journey to ensure better food for everyone, and together, we can transform lives through the power of nourishment.",
+        "price": "$850.00"
+      },
+      {
+        "id": "7",
+        "picture": "https://i.ibb.co/ZVkbkt5/food-community.jpg",
+        "title": "Feed the Future",
+        "category": "Food",
+        "category_bg": "#F8714733",
+        "card_bg": "#F8714726",
+        "text_button_bg": "#F87147",
+        "description": "Feed the Future is a global movement working to end hunger and malnutrition. We're dedicated to creating sustainable solutions to food insecurity by empowering communities, supporting small farmers, and advancing agricultural innovation. Our vision is a world where no one goes to bed hungry, and every child has the opportunity to thrive. Join us in feeding the future, and together, we can make hunger a thing of the past.",
+        "price": "$350.00"
+      },
+      {
+        "id": "11",
+        "picture": "https://i.ibb.co/mCgDqtw/food-united-against-hunger.jpg",
+        "title": "United Against Hunger",
+        "category": "Food",
+        "category_bg": "#F8714733",
+        "card_bg": "#F8714726",
+        "text_button_bg": "#F87147",
+        "description": "United Against Hunger is a coalition of individuals and organizations determined to combat hunger's devastating impact on communities worldwide. By pooling our resources and efforts, we strengthen food security, provide emergency relief, and promote sustainable solutions. Our goal is to unite people from all walks of life in the fight against hunger and its root causes. Join us in standing united against hunger, and together, we can create a world where no one suffers from food insecurity.",
+        "price": "$650.00"
+      },
+      {
+        "id": "4",
+        "picture": "https://i.ibb.co/4mP0wqz/education-good.png",
+        "title": "Good Education",
+        "category": "Education",
+        "category_bg": "#FF444A33",
+        "card_bg": "#FF444A26",
+        "text_button_bg": "#FF444A",
+        "description": "Good Education is our commitment to providing quality learning opportunities for all. We believe that access to education is a fundamental right and a pathway to brighter futures. Our initiatives focus on enhancing educational resources, improving teaching standards, and fostering inclusive learning environments. Together, we're shaping a world where every child, regardless of background, has the chance to receive a good education and unlock their full potential.",
+        "price": "$380.00"
+      },
+      {
+        "id": "8",
+        "picture": "https://i.ibb.co/8cxg5n5/education-scholarship.jpg",
+        "title": "Scholarships for Success",
+        "category": "Education",
+        "category_bg": "#FF444A33",
+        "card_bg": "#FF444A26",
+        "text_button_bg": "#FF444A",
+        "description": "Scholarships for Success is a program dedicated to making higher education dreams a reality. We offer scholarships to deserving students, eliminating financial barriers and enabling them to pursue their academic goals. Our mission is to empower the next generation of leaders, innovators, and changemakers. Join us in supporting Scholarships for Success, and together, we can ensure that talented individuals have the opportunity to achieve success through education.",
+        "price": "$380.00"
+      },
+      {
+        "id": "10",
+        "picture": "https://i.ibb.co/cCq04jW/education-books.jpg",
+        "title": "Education for All: Bridging the Learning Gap",
+        "category": "Education",
+        "category_bg": "#FF444A33",
+        "card_bg": "#FF444A26",
+        "text_button_bg": "#FF444A",
+        "description": "Education for All: Bridging the Learning Gap is a transformative initiative aimed at closing educational disparities. We recognize that access to quality education should not be a privilege but a universal right. Through targeted interventions, resource allocation, and community engagement, we're working to ensure that every child has an equal chance to learn and thrive. Join us in bridging the learning gap, and together, we can create a world where education knows no boundaries.",
+        "price": "$780.00"
+      }
+    ]
+  }
+  

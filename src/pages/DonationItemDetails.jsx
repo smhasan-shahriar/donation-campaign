@@ -40,7 +40,7 @@ const DonationItemDetails = () => {
         else{
             const exists = selectedItems.find(item => item.id === id);
             if(exists){
-                toast('You have already made the donation');
+                toast('You have already made this donation');
                 return; 
             }
             else{

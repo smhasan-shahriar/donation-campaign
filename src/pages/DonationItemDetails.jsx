@@ -54,17 +54,17 @@ const DonationItemDetails = () => {
     }
     console.log(total)
     return (
-        <div className='max-w-[1320px] mx-auto max-h-[700px] relative'>
+        <div className='max-w-[1320px] mx-auto max-h-[700px]'>
             <img className='w-full max-h-[700px] object-cover' src={picture} alt="" />
-            <div className='p-9 absolute w-full bottom-0' style={{background: 'rgba(11, 11, 11, 0.50)'}} >
+            <div className='p-9 relative h-[130px] -top-[130px]' style={{background: 'rgba(11, 11, 11, 0.50)'}} >
                 <button onClick={handleSelect} style={{background: text_color}} className='text-white font-semibold text-xl px-6 py-4 rounded-md'>Donate ${price}</button>
                 
-            <ToastContainer></ToastContainer>
             </div>
-            <div className='mt-12 mx-4 lg:mx-0 pb-20'>
+            <div className='mx-4 lg:mx-0 relative -top-20 pb-20'>
                 <h2 className='text-[40px] font-bold mb-6'>{title}</h2>
                 <p className='opacity-70 text-justify'>{description}</p>
             </div>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

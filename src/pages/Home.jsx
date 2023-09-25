@@ -44,7 +44,7 @@ const Home = () => {
             <div className='h-[50px] border border-[#DEDEDE] rounded-lg'>
                 <form onSubmit={handleSubmit}>
                     <input onChange={handleChange} name="search" className='text-sm p-4 md:w-[360px] w-[220px]' type="text" placeholder='Search here...' />
-                    <input type="submit" className='w-[110px] h-[50px] bg-[#FF444A] text-white rounded-lg font-semibold' value="Search"></input>
+                    <input type="submit" className='w-[110px] h-[50px] bg-[#FF444A] text-white rounded-r-lg font-semibold' value="Search"></input>
                 </form>
             </div>
         </div>

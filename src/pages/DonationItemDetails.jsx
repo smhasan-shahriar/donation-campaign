@@ -56,8 +56,8 @@ const DonationItemDetails = () => {
     return (
         <div className='max-w-[1320px] mx-auto max-h-[700px]'>
             <img className='w-full max-h-[700px] object-cover' src={picture} alt="" />
-            <div className='p-9 relative h-[130px] -top-[130px]' style={{background: 'rgba(11, 11, 11, 0.50)'}} >
-                <button onClick={handleSelect} style={{background: text_color}} className='text-white font-semibold text-xl px-6 py-4 rounded-md'>Donate ${price}</button>
+            <div className='p-5 md:p-9 relative -h-[80px] -top-[80px] md:h-[130px] md:-top-[130px]' style={{background: 'rgba(11, 11, 11, 0.50)'}} >
+                <button onClick={handleSelect} style={{background: text_color}} className='text-white font-semibold md:text-xl px-6 md:py-4 py-2 rounded-md'>Donate ${price}</button>
                 
             </div>
             <div className='mx-4 lg:mx-0 relative -top-20 pb-20'>

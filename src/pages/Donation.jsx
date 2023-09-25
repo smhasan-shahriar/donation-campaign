@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import { useContext, useState } from 'react';
 import SelectedDonationCard from '../components/SelectedDonationCard';
 import { TotalContext } from '../mainLayout/MainLayout';
 

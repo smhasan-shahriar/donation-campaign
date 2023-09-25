@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 import Header from '../components/Header/Header';
 import { Outlet } from 'react-router-dom'
 export const TotalContext = createContext([])

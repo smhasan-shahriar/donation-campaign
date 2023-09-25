@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
 import { useLoaderData } from 'react-router-dom';
 import DonationCard from '../components/DonationCard';
 
@@ -15,6 +17,8 @@ const Home = () => {
             setDisplayDonation(filteredDonation)
         }
         else{
+            toast('Please enter proper category name. i.e. Food, Health, Education, Clothing');
+            e.target.search.value =''
             setDisplayDonation(donations);
         }
        
@@ -33,6 +37,7 @@ const Home = () => {
     
     return (
         <div className='mb-28'>
+            <ToastContainer />
             <div>
             <div className='h-[600px] flex flex-col justify-center items-center gap-10 relative max-w-[1600px] mx-auto -top-[172px] z-0' style={bgStyle}>
             <h1 className='text-5xl font-bold opacity-100 text-center'>I Grow By Helping People In Need</h1>

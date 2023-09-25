@@ -12,49 +12,50 @@ const DonationItemDetails = () => {
     const donationItem = donations.find(donation => donation.id === id)
     const {picture, title, text_color, price, description} = donationItem;
     const handleSelect = () =>{
-        const selectedItems = [...total];
-        if (selectedItems.length === 0){
+        // const selectedItems = [...total];
+        // if (selectedItems.length === 0){
+        //     const newItems = [];
+        //     newItems.push(donationItem);
+        //     setTotal(newItems)
+        // }
+        // else{
+        //   const exists = selectedItems.find(item => item.id === id);
+        //     if(exists){
+        //         toast('You have already made the donation');
+        //         return; 
+        //     }
+        //     else{
+        //     const newItems = [...selectedItems, donationItem];
+        //     setTotal(newItems)
+        //     }
+        // }
+
+        const selectedItems = JSON.parse(localStorage.getItem('donation-saved'));
+        if(!selectedItems){
             const newItems = [];
             newItems.push(donationItem);
+            localStorage.setItem('donation-saved', JSON.stringify(newItems));
             setTotal(newItems)
         }
         else{
-          const exists = selectedItems.find(item => item.id === id);
+            const exists = selectedItems.find(item => item.id === id);
             if(exists){
                 toast('You have already made the donation');
                 return; 
             }
             else{
             const newItems = [...selectedItems, donationItem];
+            localStorage.setItem('donation-saved', JSON.stringify(newItems));
             setTotal(newItems)
             }
-        }
-
-        // const selectedItems = JSON.parse(localStorage.getItem('donation-saved'));
-        // if(!selectedItems){
-        //     const newItems = [];
-        //     newItems.push(donationItem);
-        //     localStorage.setItem('donation-saved', JSON.stringify(newItems));
-        //     setTotal(newItems)
-        // }
-        // else{
-        //     const exists = selectedItems.find(item => item.id === id);
-        //     if(exists){
-        //         toast('You have already made the donation')
-        //     }
-        //     else{
-        //     const newItems = [...selectedItems, donationItem];
-        //     localStorage.setItem('donation-saved', JSON.stringify(newItems));
-        //     setTotal(newItems)
-        //     }
          
-        // }
+        }
         toast('You have successfully made the donation');
     }
     console.log(total)
     return (
-        <div className='max-w-[1320px] mx-auto'>
-            <img src={picture} alt="" />
+        <div className='max-w-[1320px] mx-auto max-h-[700px]'>
+            <img className='w-full max-h-[700px] object-cover' src={picture} alt="" />
             <div className='p-9 relative -top-[130px]' style={{background: 'rgba(11, 11, 11, 0.50)'}} >
                 <button onClick={handleSelect} style={{background: text_color}} className='text-white font-semibold text-xl px-6 py-4 rounded-md'>Donate ${price}</button>
                 

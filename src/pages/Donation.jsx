@@ -3,21 +3,22 @@ import SelectedDonationCard from '../components/SelectedDonationCard';
 import { TotalContext } from '../mainLayout/MainLayout';
 
 const Donation = () => {
-    const [donations, setDonations] = useState([]);
+   
     const [displayAll, setDisplayAll] = useState(false);
     const [total] = useContext(TotalContext);
     
-    useEffect(()=> {
-        // const newDonations = JSON.parse(localStorage.getItem('donation-saved'));
-        const newDonations = [...total]
-        if (newDonations === 0){
-            setDonations([])
-        }
-        else{
-            setDonations(newDonations);
-        }
+    // useEffect(()=> {
+    //     // const newDonations = JSON.parse(localStorage.getItem('donation-saved'));
+    //     const newDonations = [...total]
+    //     if (newDonations === 0){
+    //         setDonations([])
+    //     }
+    //     else{
+    //         setDonations(newDonations);
+    //     }
         
-    }, [])
+    // }, [])
+    const donations= [...total];
 
     return (
         <div className="max-w-[1320px] mx-auto">

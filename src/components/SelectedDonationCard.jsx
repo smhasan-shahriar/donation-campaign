@@ -9,7 +9,7 @@ const SelectedDonationCard = ({donation}) => {
     }
     return (
         <div style={{background: card_bg}} className='flex gap-6 items-center rouded-lg'>
-            <img className='w-[180px] h-[160px] md:w-[220px] md:h-[200px] object-cover' src={picture} alt="" />
+            <img className='w-[190px] h-[170px] md:w-[220px] md:h-[200px] object-cover' src={picture} alt="" />
             <div>
             <button style={{background: category_bg, color: text_color}} className='py-1 px-[10px] rounded-md font-medium text-sm'>{category}</button>
             <h2 className='my-1 md:my-2 md:text-2xl text-lg font-semibold'>{title}</h2>

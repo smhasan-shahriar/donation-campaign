@@ -9,7 +9,7 @@ const Header = () => {
                     <img src="https://i.ibb.co/TqSHKfr/logo.png" alt="" />
                 </div>
                 <div>
-                    <ul className='flex flex-col md:flex-row gap-12 text-lg text-center'>
+                    <ul className='flex md:flex-row gap-12 text-lg text-center'>
                         <li>
                             <NavLink to= "/">Home</NavLink>
                         </li>

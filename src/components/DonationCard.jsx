@@ -13,7 +13,7 @@ const DonationCard = ({donation}) => {
     }
 
     return (
-        <div onClick={handleDetails} style={{background: card_bg}} className='w-[312px] rounded-lg'>
+        <div onClick={handleDetails} style={{background: card_bg}} className='w-[312px] rounded-lg lg:max-xl:w-[24vw] mb-6'>
             <img className='w-full h-[194px] object-cover' src={picture} alt="" />
             <button style={{background: category_bg, color: text_color}} className='mx-4 mt-4 mb-2 py-1 px-[10px] rounded-md font-medium text-sm'>{category}</button>
             <h2 style={{color: text_color}} className='mx-4 mb-4 text-xl font-semibold'>{title}</h2>

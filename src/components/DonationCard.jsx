@@ -6,6 +6,10 @@ const DonationCard = ({donation}) => {
     const navigate = useNavigate();
     const handleDetails = () => {
         navigate(`/donations/${id}`);
+        window.scrollTo({
+            top: 0, 
+            behavior: 'smooth' 
+         });
     }
 
     return (

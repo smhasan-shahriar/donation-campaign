@@ -40,7 +40,7 @@ const Home = () => {
             <ToastContainer />
             <div>
             <div className='h-[700px] md:h-[600px] flex flex-col justify-center items-center gap-10 relative max-w-[1600px] mx-auto md:-top-[172px] -top-[250px] z-0' style={bgStyle}>
-            <h1 className='text-5xl font-bold opacity-100 text-center'>I Grow By Helping People In Need</h1>
+            <h1 className='text-4xl md:text-5xl font-bold opacity-100 text-center md:mt-10 mt-28'>I Grow By Helping People In Need</h1>
             <div className='h-[50px] border border-[#DEDEDE] rounded-lg'>
                 <form onSubmit={handleSubmit}>
                     <input onChange={handleChange} name="search" className='text-sm p-4 md:w-[360px] w-[220px]' type="text" placeholder='Search here...' />

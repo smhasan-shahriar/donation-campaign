@@ -60,7 +60,7 @@ const DonationItemDetails = () => {
                 <button onClick={handleSelect} style={{background: text_color}} className='text-white font-semibold md:text-xl px-6 md:py-4 py-2 rounded-md'>Donate ${price}</button>
                 
             </div>
-            <div className='mx-4 lg:mx-0 relative -top-20 pb-20'>
+            <div className='mx-4 lg:mx-0 relative md:-top-20 -top-10 pb-20'>
                 <h2 className='text-[40px] font-bold mb-6'>{title}</h2>
                 <p className='opacity-70 text-justify'>{description}</p>
             </div>

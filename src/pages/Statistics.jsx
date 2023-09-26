@@ -1,15 +1,24 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { TotalContext } from '../mainLayout/MainLayout';
 import { PieChart, Pie, Cell } from 'recharts';
 
 
 
 const Statistics = () => {
-    const [total] = useContext(TotalContext);
-    const totalDonations = [...total];
+    const [total, setTotal] = useContext(TotalContext);
+    useEffect(()=> {
+      const newDonations = JSON.parse(localStorage.getItem('donation-saved'));
+      if (!newDonations){
+          setTotal([])
+      }
+      else{
+          setTotal(newDonations);
+      }
+      
+  }, [])
     const data = [
-        { name: 'Group A', value: 12-totalDonations.length },
-        { name: 'Group B', value: totalDonations.length },
+        { name: 'Group A', value: 12-total.length },
+        { name: 'Group B', value: total.length },
       ];
       
       const COLORS = ['#FF444A', '#00C49F' ];
